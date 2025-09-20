@@ -1,9 +1,9 @@
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { height: 100%; }
 :root {
-  --glass-alpha: 0.12;         /* شفافیت زمینه کارت */
-  --glass-border-alpha: 0.08;  /* شفافیت مرز کارت */
-  --glass-blur: 20px;          /* مقدار تاری */
+  --glass-alpha: 0.10;         /* شفافیت زمینه کارت */
+  --glass-border-alpha: 0.06;  /* شفافیت مرز کارت */
+  --glass-blur: 24px;          /* مقدار تاری */
   --glass-sat: 180%;           /* اشباع رنگ پشت شیشه */
   --accent: #0A84FF;
   --bg-dark: #0B0B10;
