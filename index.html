@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <title>FX Levels</title>
+  <meta name="theme-color" content="#0B0B10"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="bg-wall"></div>
+  <div class="bg-dim"></div>
+
+  <main class="grid">
+    <section class="card">
+      <div class="card-head green clickable" id="buyHead">خرید</div>
+      <div class="card-body">
+        <div class="row"><input id="buyTop"  inputmode="decimal" placeholder=""></div>
+        <div class="row"><input id="buyHigh" inputmode="decimal" placeholder=""></div>
+        <div class="row"><input id="buyLow"  inputmode="decimal" placeholder=""></div>
+        <hr/>
+        <div class="row"><div class="badge green-soft full" id="buyP1">—</div></div>
+        <div class="row"><div class="badge green-soft full" id="buyP2">—</div></div>
+        <div class="row"><div class="badge yellow full" id="buyStop">—</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head pink clickable" id="sellHead">فروش</div>
+      <div class="card-body">
+        <div class="row"><input id="sellLow"  inputmode="decimal" placeholder=""></div>
+        <div class="row"><input id="sellHigh" inputmode="decimal" placeholder=""></div>
+        <div class="row"><input id="sellLow2" inputmode="decimal" placeholder=""></div>
+        <hr/>
+        <div class="row"><div class="badge yellow full" id="sellStop">—</div></div>
+        <div class="row"><div class="badge red-soft full" id="sellP2">—</div></div>
+        <div class="row"><div class="badge red-soft full" id="sellP1">—</div></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
