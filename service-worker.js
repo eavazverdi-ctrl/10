@@ -1,4 +1,4 @@
-const CACHE = 'fxlevels-v19';
+const CACHE = 'fxlevels-v20';
 const ASSETS = [
   './',
   './index.html',
